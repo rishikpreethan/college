@@ -1,4 +1,5 @@
 //Check if keyword is present in a document title without using standard library functions.(case-insensitive)
+
 #include <stdio.h>
 int main(){
     char title[100],keyword[50];

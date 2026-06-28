@@ -12,8 +12,8 @@ int fibo(int n){
 }
 
 int main(){
-    int n;
-    prnitf("Enter number of terms: ");
+    int n,i;
+    printf("Enter number of terms: ");
     scanf("%d",&n);
     if(n<=0){
         printf("Invalud number of terms.");

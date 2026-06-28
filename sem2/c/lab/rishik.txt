@@ -1,5 +1,3 @@
-//Count the number of characters and lines in a text file
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,8 +63,8 @@ int main(){
         //b & c. Store word and track frequency.
         int found=0;
         for(int i=0;i<uniqueCount;i++){
-            if(strcmp(list[i].word,clean)==0){
-                list[i].frequency++;
+            if(strcpy(list[i].word,clean)==0){
+                list[uniqueCount].frequency++;
                 found=1;
                 break;
             }
