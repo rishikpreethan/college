@@ -20,7 +20,7 @@ int main(){
     }
     printf("Fibonacci series upto %d terms is: \n",n);
     for(i=0;i<n;i++){
-        printf("%d",fibo(i));
+        printf("%d ",fibo(i));
     }
     return 0;
 }

@@ -8,12 +8,12 @@
 #define MAX_WORDS_LEN 50
 
 typedef struct{
-    char word[MAX_WORDS_LEN];  /////////
+    char word[MAX_WORDS_LEN];  
     int frequency;
 }WordRecord;
 
 int main(){
-   char filename[100],ch,tempWord[MAX_WORDS_LEN];   ///////////
+   char filename[100],ch,tempWord[MAX_WORDS_LEN];   
    FILE *file;
    int lines=0,words_count=0,characters=0; 
    WordRecord list[MAX_WORDS];
@@ -50,7 +50,7 @@ int main(){
    while(fscanf(file,"%s",tempWord)!=EOF){
         //a. Convert word to lowercase and remove punctuation.
         int j=0;
-        char clean[MAX_WORDS_LEN]="";     ////////////////////////////////
+        char clean[MAX_WORDS_LEN]="";     
         for(int i=0;tempWord[i];i++){
             if(isalpha(tempWord[i])){
                 clean[j++]=tolower(tempWord[i]);
@@ -60,8 +60,10 @@ int main(){
         if(strlen(clean)==0){
             continue;
         }
+
         //d. Increment total word count.
         words_count++;
+
         //b & c. Store word and track frequency.
         int found=0;
         for(int i=0;i<uniqueCount;i++){
@@ -92,7 +94,6 @@ int main(){
     }
 
     //8. Display results
-
     printf("\n---Manuscripts Analysis---\n");
     printf("Total characters: %d\n",characters);
     printf("Total words: %d\n",words_count);
